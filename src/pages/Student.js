@@ -14,6 +14,7 @@ function Student() {
         'status' : false
     })
     
+    
     useEffect(() => {
         axios.get(`http://127.0.0.1:8000/api/get-user?page=${page}`).then(res => {
             if (res.data.code === 200 && res.data.status === true) {
